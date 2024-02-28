@@ -1,0 +1,42 @@
+[MAIN]
+
+# ignore false-positive import errors for natively compiled modules
+extension-pkg-whitelist=pydantic
+load-plugins=pylint_junit
+
+[FORMAT]
+
+max-line-length=140
+
+
+[MESSAGES CONTROL]
+
+# disable unwanted checks
+disable=raw-checker-failed,
+        bad-inline-option,
+        locally-disabled,
+        file-ignored,
+        suppressed-message,
+        useless-suppression,
+        deprecated-pragma,
+        use-symbolic-message-instead,
+        use-implicit-booleaness-not-comparison-to-string,
+        use-implicit-booleaness-not-comparison-to-zero,
+        missing-module-docstring,
+        unspecified-encoding,
+        consider-using-dict-items,
+        too-many-nested-blocks,
+        too-few-public-methods,
+        line-too-long,
+        bare-except,
+        too-many-arguments,
+        import-outside-toplevel,
+        too-many-branches,
+        too-many-return-statements,
+        logging-fstring-interpolation,
+        invalid-name,
+        too-many-instance-attributes,
+        broad-exception-caught,
+        import-error,
+        broad-exception-raised,
+        too-many-locals
